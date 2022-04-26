@@ -48,7 +48,7 @@ wget https://github.com/deepmind/alphafold/archive/refs/tags/v2.2.0.tar.gz && ta
 ### **Download chemical properties to the common folder**
 
 ``` bash
-wget -q -P $alphafold_path/alphafold/common/ https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c4941278d92b554ec94415f8/modules/mol/alg/src/stereo_chemical_props.txt
+wget --no-check-certificate -q -P $alphafold_path/alphafold/common/ https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c4941278d92b554ec94415f8/modules/mol/alg/src/stereo_chemical_props.txt
 ```
 
 ### **Apply OpenMM patch**

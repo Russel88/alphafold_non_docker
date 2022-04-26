@@ -63,6 +63,11 @@ cd ~/anaconda3/envs/alphafold/lib/python3.8/site-packages/ && patch -p0 < $alpha
 cd ~/miniconda3/envs/alphafold/lib/python3.8/site-packages/ && patch -p0 < $alphafold_path/docker/openmm.patch
 ```
 
+### **Fix cuSolver error**
+```
+ln -s ~/miniconda3/envs/alphafold/lib/libcusolver.so.10 ~/miniconda3/envs/alphafold/lib/libcusolver.so.11
+```
+
 ### **Download all databases**
 
 - Option 1: Use our [download_db.sh script](https://github.com/kalininalab/alphafold_non_docker/blob/main/download_db.sh) which uses wget, rsync, gunzip and tar instead of aria2c
